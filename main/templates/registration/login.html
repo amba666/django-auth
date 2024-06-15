@@ -11,5 +11,8 @@ Login
 <form method="post">
 {% csrf_token %}
 {{ form | crispy}}
+<p>Don't have an account? Create here <a href="/sign-up">Sign Up</a></p>
+<button type="submit" class="btn btn-primary">Login</button>
+
 </form>
 {% endblock content %} 
