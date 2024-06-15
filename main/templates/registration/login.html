@@ -10,6 +10,10 @@ Login
 {% block content %}
 <form method="post">
 {% csrf_token %}
+<h1 class="h1">
+Login
+</h1>
+
 {{ form | crispy}}
 <p>Don't have an account? Create here <a href="/sign-up">Sign Up</a></p>
 <button type="submit" class="btn btn-primary">Login</button>

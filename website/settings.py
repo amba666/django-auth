@@ -42,6 +42,12 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
 ]
 
+CRISPY_ALLOWED_TEMPLATE_PACKS ="bootstrap5"
+
+
+CRISPY_TEMPLATE_PACK="bootstrap5"
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -124,3 +130,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = '/home'
+
+LOGout_REDIRECT_URL = '/login'
