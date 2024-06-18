@@ -15,7 +15,7 @@ Login
 </h1>
 
 {{ form | crispy}}
-<p>Don't have an account? Create here <a href="/sign-up">Sign Up</a></p>
+<p>Don't have an account? Create here <a href="{% url 'sign-up' %}">Sign Up</a></p>
 <button type="submit" class="btn btn-primary">Login</button>
 
 </form>

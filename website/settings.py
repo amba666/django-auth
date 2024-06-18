@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'crispy_bootstrap5',
+    # 'django_admin_lte',
+    
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS ="bootstrap5"
@@ -72,6 +74,10 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+
+            # 'libraries': {
+            #     'admin_lte_tags': 'django_admin_lte.templatetags.admin_lte_tags',
+            # },
         },
     },
 ]
